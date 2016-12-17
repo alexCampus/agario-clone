@@ -1,5 +1,5 @@
 ﻿<!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
     <!-- Meta Properties -->
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
 </head>
 <body>
     <div id="gameAreaWrapper">
-        <div id="status"><span class="title">Leaderboard</span></div>
+        <div id="status"><span class="title">Journal de bord</span></div>
         <div class="chatbox" id="chatbox">
             <ul id="chatList" class="chat-list"></ul>
             <input id="chatInput" type="text" class="chat-input" placeholder="Chat here..." maxlength="35" />
@@ -26,16 +26,16 @@
     </div>
     <div id="startMenuWrapper">
         <div id="startMenu">
-            <p>Open Agar</p>
+            <p>Ouvrir Agar</p>
             <input type="text" tabindex="0" autofocus placeholder="Enter your name here" id="playerNameInput" maxlength="25" />
-            <b class="input-error">Nick must be alphanumeric characters only!</b>
+            <b class="input-error">Votre pseudo est invalide</b>
             <br />
-            <a onclick="document.getElementById('spawn_cell').play();"><button id="startButton">Play</button></a>
-            <button id="spectateButton">Spectate</button>
-            <button id="settingsButton">Settings</button>
+            <a onclick="document.getElementById('spawn_cell').play();"><button id="startButton">Jouer</button></a>
+            <button id="spectateButton">Spectateur</button>
+            <button id="settingsButton">Paramètres</button>
             <br />
             <div id="settings">
-                <h3>Settings</h3>
+                <h3>Paramètres</h3>
                 <ul>
                     <label><input id="visBord" type="checkbox">Show border</label>
                     <label><input id="showMass" type="checkbox">Show mass</label>
@@ -46,12 +46,12 @@
                 </ul>
             </div>
             <div id="instructions">
-                <h3>Gameplay</h3>
+                <h3>Comment jouer</h3>
                 <ul>
-                    <li>Move your mouse on the screen to move your character.</li>
-                    <li>Eat food and other players in order to grow your character (food respawns every time a player eats it).</li>
-                    <li>A player's mass is the number of food particles eaten.</li>
-                    <li>Objective: Try to get fat and eat other players.</li>
+                    <li>Bougez la souris pour vous déplacer</li>
+                    <li>Manger tous ce qui passe meme les autres joueurs plus petit que vous</li>
+                    <li>Plus vous mangez plus vous grandissez</li>
+                    <li>Objectif : Devenir les plus gros possible</li>
                 </ul>
             </div>
         </div>
